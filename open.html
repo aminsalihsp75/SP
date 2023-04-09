@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="w3.css" />
+  <body>
+    <div class="w3-container">
+      <h2></h2>
+
+      <button
+        onclick="document.getElementById('id01').style.display='block'"
+        class="w3-button w3-red w3-large"
+      >
+        Report an Incident
+      </button>
+
+      <div id="id01" class="w3-modal">
+        <div
+          class="w3-modal-content w3-card-4 w3-animate-zoom"
+          style="max-width: 600px"
+        >
+          <div class="w3-center">
+            <br />
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-xlarge w3-transparent w3-display-topright"
+              title="Close Modal"
+              >×</span
+            >
+          </div>
+
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <h3 style="color: rgb(228, 97, 97)">Incidet/Issue</h3>
+
+              <label><b>Description</b></label>
+              <input
+                class="w3-input w3-border w3-margin-bottom"
+                type="text"
+                placeholder="Description"
+                name="desc"
+                required
+              />
+              <label><b>Contact Name</b></label>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Contact Name"
+                name="name"
+                required
+              />
+
+              <label><b>Current Location</b></label>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Current Location"
+                name="location"
+                required
+              />
+
+              <label><b>Phone Extension</b></label>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Phone Extension"
+                name="phone"
+                required
+              />
+
+              <label><b>Mobile Number</b></label>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="Mobile Number"
+                name="mobile"
+                required
+              />
+            </div>
+          </form>
+
+          <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+            <button
+              onclick="document.getElementById('id01').style.display='none'"
+              type="button"
+              class="w3-button w3-block w3-indigo w3-section w3-padding"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
